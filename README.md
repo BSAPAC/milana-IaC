@@ -8,7 +8,7 @@ Before you begin, ensure you have the following prerequisites in place:
 
 - [Terraform](https://www.terraform.io/downloads.html) installed on your local machine.
 - Azure CLI installed and authenticated with your subscription.
-- kubectl and helm for managing kubernetes
+- kubectl and helm for managing kubernetesb resources
 
 ### Creating an Azure Service Principal
 
