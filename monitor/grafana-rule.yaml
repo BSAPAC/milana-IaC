@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: grafana-ingress
+  namespace: monitoring
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-issuer
+    kubernetes.io/ingress.class: nginx
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: "grafana.milana.tech"
+      http:
+        paths:
+          - pathType: Prefix
+            backend:
+              service:
+                name: pga-grafana
+                port:
+                  number: 80
+            path: "/"
+  tls:
+    - hosts:
+      - grafana.milana.tech
+      secretName: secret-grafana
