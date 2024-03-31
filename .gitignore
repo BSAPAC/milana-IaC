@@ -1,4 +1,4 @@
-.terraform
-kubeconfig
+**.terraform
+**kubeconfig
 **.tfstate
 **.tfvars
