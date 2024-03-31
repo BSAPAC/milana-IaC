@@ -64,9 +64,9 @@ az aks get-credentials --resource-group your-rg-name --name your-aks-cluster-nam
 ## Testing 
 
 - After all components running
-- add your test domain in infra-test/ingress-rule.yaml 
-- add dns entry with your domain and loadbalancer ip of ingress 
-- and apply this files 
+- Add your test domain in infra-test/ingress-rule.yaml file 
+- Add dns entry with your domain and loadbalancer ip of ingress 
+- And apply this files 
 
 ```bash
 kubectl apply -f infra-test/manifest.yaml
